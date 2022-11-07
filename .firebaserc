@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "maps-angular-app": {
+      "hosting": {
+        "google-maps-angular-app": [
+          "maps-angular-app"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "maps-angular-app"
+  }
+}

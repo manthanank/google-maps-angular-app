@@ -100,8 +100,21 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "google-maps-angular-app:build:production",
+            "firebaseProject": "maps-angular-app",
+            "firebaseHostingSite": "maps-angular-app"
+          }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "b625d4b4-7928-4f3f-ab98-368eb134c3b2"
   }
 }
