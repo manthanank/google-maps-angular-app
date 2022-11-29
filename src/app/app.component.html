@@ -1,1 +1,18 @@
-<router-outlet></router-outlet>
+<mat-toolbar color="primary">Angular Google Maps App</mat-toolbar>
+<div class="container">
+  <div class="input-area">
+    <h2>From</h2>
+    <app-place-autocomplete (placeChanged)="fromValue = $event" placeholder="Enter from address...">
+    </app-place-autocomplete>
+    <h2>to</h2>
+    <app-place-autocomplete (placeChanged)="toValue = $event" placeholder="Enter to address...">
+    </app-place-autocomplete>
+  </div>
+  <div class="display-area" [hidden]="!fromValue.address && !toValue.address">
+    <div>
+      <app-place-card [data]="fromValue"></app-place-card>
+      <app-place-card [data]="toValue"></app-place-card>
+    </div>
+    <app-map-display [from]="fromValue" [to]="toValue"></app-map-display>
+  </div>
+</div>

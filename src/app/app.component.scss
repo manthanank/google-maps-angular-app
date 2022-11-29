@@ -1,0 +1,33 @@
+.input-area {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.display-area {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  height: calc(100vh - 180px);
+  > div {
+    width: 30%;
+    overflow: auto;
+    padding: 8px;
+    height: inherit;
+    > * {
+      margin-bottom: 16px;
+    }
+  }
+  > app-map-display {
+    width: 70%;
+    height: inherit;
+  }
+}
+.display-area[hidden] {
+  display: none;
+}
+.container {
+  padding: 24px;
+}
+app-place-autocomplete {
+  width: 300px;
+}
