@@ -108,9 +108,7 @@
           "options": {
             "prerender": false,
             "ssr": false,
-            "browserTarget": "google-maps-angular-app:build:production",
-            "firebaseProject": "maps-angular-app",
-            "firebaseHostingSite": "maps-angular-app"
+            "browserTarget": "google-maps-angular-app:build:production"
           }
         }
       }
